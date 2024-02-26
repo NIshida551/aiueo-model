@@ -10,6 +10,18 @@ recordButton.addEventListener('click', async () => {
   // 録音が終わったらサーバーにデータを送信
 });
 
+let model;
+async function loadModel() {
+  // Teachable MachineのモデルURLを指定
+  const modelURL = 'YOUR_PATH/model.json';
+  model = await tmImage.load(modelURL);
+  // モデルがロードされたことを確認
+  console.log("モデルがロードされました。");
+}
+
+loadModel();
+
+
 // app.js (続き)
 // ...
 
