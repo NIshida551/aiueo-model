@@ -13,7 +13,7 @@ recordButton.addEventListener('click', async () => {
 let model;
 async function loadModel() {
   // Teachable MachineのモデルURLを指定
-  const modelURL = 'YOUR_PATH/model.json';
+  const modelURL = 'model.json';
   model = await tmImage.load(modelURL);
   // モデルがロードされたことを確認
   console.log("モデルがロードされました。");
